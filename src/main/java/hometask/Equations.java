@@ -2,6 +2,11 @@ package hometask;
 
 public class Equations {
     public static void main(String[] args) {
+        //не нужно указывать имя класса 
+        //lng();
+        //nt();
+        //flt();
+        //dbl();
         Equations.lng();
         Equations.nt();
         Equations.flt();
