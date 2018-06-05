@@ -15,10 +15,13 @@ public class RandArray {
 
         int randArray[] = new int[arrayLength];    //Передаем длину массива, заполняем random'ом от 1 до 10 и выводим
         for (int i = 0; i < randArray.length; i++) {
-            randArray[i] = (int) (Math.random() * 10);
+            randArray[i] = (int) (Math.random() * 10); //Вот тут можно умножить на большее число, чтобы были не однозначные цифры.
         }
         System.out.println("Ваш массив: " + Arrays.toString(randArray));
 
+        //Почему бы тут не выводить сразу в консоль числа. Запятая в конце последнего не страшна.
+        //Либо разделяй пробелами числа 
+        //Так как данно решение работает только с числами из однйо цифры
         StringBuilder finalStr = new StringBuilder();   //Создаем новую строку и записываем в нее числа, кратные 3
         for (int i = 0; i < randArray.length; i++) {
             if (randArray[i] % 3 == 0) {
