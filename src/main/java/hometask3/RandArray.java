@@ -15,27 +15,17 @@ public class RandArray {
 
         int randArray[] = new int[arrayLength];    //Передаем длину массива, заполняем random'ом от 1 до 10 и выводим
         for (int i = 0; i < randArray.length; i++) {
-            randArray[i] = (int) (Math.random() * 10); //Вот тут можно умножить на большее число, чтобы были не однозначные цифры.
+            randArray[i] = (int) (Math.random() * 100);
         }
         System.out.println("Ваш массив: " + Arrays.toString(randArray));
 
-        //Почему бы тут не выводить сразу в консоль числа. Запятая в конце последнего не страшна.
-        //Либо разделяй пробелами числа 
-        //Так как данно решение работает только с числами из однйо цифры
-        StringBuilder finalStr = new StringBuilder();   //Создаем новую строку и записываем в нее числа, кратные 3
+        StringBuilder finalStr = new StringBuilder();   //Создаем новую строку и записываем в нее числа, кратные 3, выводим
         for (int i = 0; i < randArray.length; i++) {
             if (randArray[i] % 3 == 0) {
-                finalStr.append(randArray[i]);
+                finalStr.append(randArray[i] + " ");
             }
         }
-
-        System.out.print("Числа в массиве, кратные 3: ");
-        for (int i = 0; i < finalStr.length(); i++) {   //Выводим числа, кратные 3, через запятую
-            System.out.print(finalStr.charAt(i));
-            if (i < finalStr.length() - 1) {
-                System.out.print(", ");
-            }
-        }
+        System.out.print("Числа в массиве, кратные 3: " + finalStr);
     }
 }
 
