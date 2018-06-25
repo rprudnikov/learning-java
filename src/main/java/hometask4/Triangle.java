@@ -60,7 +60,8 @@ public class Triangle {
             return 3;
         } else return 4;
     }
-    public String getTriangleInfo(){
- return String.format("[a(%d;%d) b(%d;%d) c(%d;%d)]",a.x,a.y,b.x,b.y,c.x,c.y);
+
+    public String getTriangleInfo() {
+        return String.format("[a(%d;%d) b(%d;%d) c(%d;%d)]", a.x, a.y, b.x, b.y, c.x, c.y);
     }
 }

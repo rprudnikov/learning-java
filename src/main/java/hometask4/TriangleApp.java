@@ -23,12 +23,14 @@ public class TriangleApp {
         System.out.println("2. Равносторонний");
         System.out.println("3. Прямоугольный");
         System.out.println("4. Произвольный");
+
         int userChoice = sc.nextInt();
+
         for (int i = 0; i < arraySize; i++) {
             if (array[i].getTriangleType() == userChoice) {
                 System.out.println("Мы нашли ваш треугольник!");
                 System.out.println("Индекс: " + i);
-                System.out.println("Треугольник: "+array[i].getTriangleInfo());
+                System.out.println("Треугольник: " + array[i].getTriangleInfo());
                 System.out.println("Периметр: " + array[i].calculatePerimeter());
                 System.out.println("Площадь: " + array[i].calculateSquare());
                 break;
